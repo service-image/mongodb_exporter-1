@@ -1,4 +1,4 @@
-FROM golang:1.10 as builder
+FROM golang:1.11 as builder
 WORKDIR /go/src/github.com/percona/mongodb_exporter
 COPY ./ ./
 RUN make init build
